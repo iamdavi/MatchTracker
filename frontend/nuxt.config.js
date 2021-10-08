@@ -56,16 +56,31 @@ export default {
   auth: {
     strategies: {
       local: {
+        token: {
+          property: 'access',
+          required: true,
+          type: 'Bearer'
+        },
+        user: {
+          property: false, // <--- Default "user"
+          autoFetch: true
+        },
         endpoints: {
           login: {
             url: '/api/token/',
             method: 'post',
-            propertyName: 'access',
-            altProperty: 'refresh'
           },
-          logout: {},
-          user: false
-        }
+          logout: {
+            url: '/auth/token/logout/',
+            method: 'post'
+          },
+          user: {
+            url: '/api/auth/users/me/',
+            method: 'get',
+          }
+        },
+        tokenType: 'Token',
+        tokenName: 'Authorization'
       }
     },
     redirect: {

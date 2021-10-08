@@ -1,0 +1,1 @@
+from api.views.equipo import EquipoViewSet

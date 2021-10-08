@@ -5,6 +5,8 @@
       <input v-model="user.password" type="text" placeholder="Password">
       <button type="submit">Enviar</button>
     </form>
+    <p>{{ $auth.loggedIn }}</p>
+    <p>{{ $auth.user }}</p>
   </div>
 </template>
 
@@ -14,17 +16,15 @@ export default {
   data() {
     return {
       user: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: 'admin'
       }
     }
   },
   methods: {
     async login() {
       try {
-        await this.$auth.loginWith('local', {
-          data: this.user
-        })
+        await this.$auth.loginWith('local', { data: this.user })
         this.$toasted.global.defaultSuccess({
           msg: 'Usuario autenticado correctamente'
         })
