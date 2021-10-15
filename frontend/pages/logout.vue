@@ -4,8 +4,22 @@
 
 <script>
 export default {
-  async created() {
-    await this.$auth.logout()
-  }
+  data() {
+    return {
+      refresh: this.$auth.strategy.refreshToken.get()
+    }
+  },
+  created() {
+    this.logoutUser()
+  },
+  methods: {
+    async logoutUser() {
+      await this.$auth.logout({
+        data: {
+          refresh: this.refresh
+        }
+      })
+    }
+  },
 }
 </script>

@@ -21,15 +21,18 @@ export default {
 
   // Host and port configuration: https://nuxtjs.org/docs/features/configuration/#edit-host-and-port
   server: {
-    port: 8080
+    // host: '0',
+    port: 8080,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '@/assets/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/axios'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -56,10 +59,16 @@ export default {
   auth: {
     strategies: {
       local: {
+        scheme: 'refresh',
         token: {
           property: 'access',
           required: true,
           type: 'Bearer'
+        },
+        refreshToken: {
+          property: 'refresh',
+          data: 'refresh',
+          maxAge: 60 * 60 * 24 * 30
         },
         user: {
           property: false, // <--- Default "user"
@@ -67,24 +76,38 @@ export default {
         },
         endpoints: {
           login: {
-            url: '/api/token/',
+            url: '/token/',
+            method: 'post',
+            // propertyName: 'access',
+            // altProperty: 'refresh'
+          },
+          refresh: {
+            url: '/refresh_token/',
             method: 'post',
           },
           logout: {
-            url: '/auth/token/logout/',
+            url: '/logout/',
             method: 'post'
           },
           user: {
-            url: '/api/auth/users/me/',
+            url: '/auth/users/me/',
             method: 'get',
           }
         },
-        tokenType: 'Token',
-        tokenName: 'Authorization'
+        // tokenType: 'Token',
+        // tokenName: 'Authorization'
+        tokenType: 'Bearer',
+        tokenRequired: true,
       }
     },
     redirect: {
       login: '/login',
+      logout: '/',
+      callback: '/login',
+      home: '/'
+    },
+    token: {
+      global: true
     },
   },
 
@@ -94,7 +117,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'http://localhost:8000'
+    baseURL: 'http://localhost:8000/api'
   },
 
   toast: {
@@ -127,10 +150,20 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    // theme: { disable: true },
     theme: {
-      dark: true,
+      light: true,
       themes: {
         dark: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
+        },
+        light: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
