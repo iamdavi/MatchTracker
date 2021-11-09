@@ -10,12 +10,14 @@
       app
     >
       <v-list>
-        <v-list-item link>
+        <v-list-item link class="text-center user-data-navbar">
           <v-list-item-content>
             <v-list-item-title class="text-h6">
-              Sandra Adams
+              {{ $auth.user.username }}
             </v-list-item-title>
-            <v-list-item-subtitle>sandra_a88@gmail.com</v-list-item-subtitle>
+            <v-list-item-subtitle>
+              {{ $auth.user.email }}
+            </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
         <v-list-item
@@ -113,3 +115,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.user-data-navbar {
+  min-height: 125px;
+}
+</style>

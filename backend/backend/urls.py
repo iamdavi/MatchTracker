@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-from api.router import router
+# from api.router import router
+from api.router import urlpatterns
 from api.views.authentication import LogoutAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include(router.urls)),
+    path('api/', include(urlpatterns)),
     path('api/token/', TokenObtainPairView.as_view(), name='token'),
     path('api/refresh_token/', TokenRefreshView.as_view(), name='refresh_token'),
     path('api/logout/', LogoutAPIView.as_view(), name='refresh_token'),

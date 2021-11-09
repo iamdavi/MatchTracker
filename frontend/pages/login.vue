@@ -74,9 +74,9 @@ export default {
     async login() {
       try {
         await this.$auth.loginWith('local', { data: this.user })
-          // .then(() => {
-          //   this.setLoggedInUser()
-          // })
+          .then(() => {
+            this.setLoggedInUser()
+          })
         this.$toasted.global.defaultSuccess({
           msg: 'Usuario autenticado correctamente'
         })

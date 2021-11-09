@@ -1,24 +1,33 @@
 <template>
-  <v-row>
-    <v-col cols="12" sm="12" md="6">
-      <h1>Información</h1>
-      <v-card>
-        <v-card-title>
-          Munttarpe
-        </v-card-title>
-        <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut purus vitae tellus commodo viverra. Quisque eu molestie lorem. Nam vitae posuere augue. Sed turpis tellus, ullamcorper eu aliquet id, bibendum in libero. Integer ultricies interdum ante, a tincidunt neque tristique eu. In hendrerit ipsum vitae semper varius. Praesent a turpis ac lectus facilisis faucibus. Suspendisse auctor velit sed massa finibus tincidunt. 
-        </v-card-text>
-      </v-card>
-    </v-col>
-    <v-col cols="12" sm="12" md="6">
-      <h1>Jugadores</h1>
-      <tabla-jugadores />
-    </v-col>
-  </v-row>
+  <div>
+    <v-row v-if="equipoActual">
+      <v-col cols="12" sm="12" md="6">
+        <h1>Información</h1>
+        <v-card>
+          <v-card-title>
+            {{ equipoActual.nombre }}
+          </v-card-title>
+          <v-card-text>
+            {{ equipoActual.descripcion }}
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="12" sm="12" md="6">
+        <h1>Jugadores</h1>
+        <tabla-jugadores :equipo-actual="equipoActual" />
+      </v-col>
+    </v-row>
+    <v-row v-else>
+      <v-col cols="12" class="text-center mt-5">
+        <h1>Vaya! Parece que no has creado ningún equipo</h1>
+        <h3 class="mt-3">Prueba a crear uno <a href="#">aquí.</a></h3>
+      </v-col>
+    </v-row>
+  </div>
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
 import TablaJugadores from '@/components/TablaJugadores'
 
 export default {
@@ -29,7 +38,16 @@ export default {
   data() {
     return {
     }
-  }
+  },
+  computed: {
+    ...mapState(['equipoActual'])
+  },
+  created() {
+    this.getEquipoActual()
+  },
+  methods: {
+    ...mapActions(['getEquipoActual'])
+  },
 }
 </script>
 
