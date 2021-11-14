@@ -81,22 +81,22 @@ export default {
         {
           icon: 'mdi-handball',
           title: 'Jugadores',
-          to: '/'
+          to: '/jugadores'
         },
         {
           icon: 'mdi-sword-cross',
           title: 'Rivales',
-          to: '/'
+          to: '/#'
         },
         {
           icon: 'mdi-soccer',
           title: 'Partidos',
-          to: '/'
+          to: '/#'
         },
         {
           icon: 'mdi-strategy',
           title: 'Jugadas',
-          to: '/'
+          to: '/#'
         },
         {
           icon: 'mdi-logout',

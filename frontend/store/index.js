@@ -2,6 +2,10 @@ export const state = () => ({
   baseUrl: 'http://127.0.0.1:8000/api',
   equipos: [],
   jugadores: [],
+  jugador: {
+    numero: '',
+    nombre: ''
+  },
   equipo: {
     nombre: '',
     descripcion: '',
@@ -10,32 +14,34 @@ export const state = () => ({
 })
 
 export const mutations = {
+  // EQUIPO
   setEquipo(state, payload) {
     state.equipo = payload
   },
-  updateEquipoNombre(state, payload) {
-    state.equipo.nombre = payload
+  updateEquipo(state, payload) {
+    Object.entries(payload).forEach(campo => {
+      state.equipo[campo[0]] = campo[1]
+    });
   },
-  updateEquipoDescripcion(state, payload) {
-    state.equipo.descripcion = payload
+  // JUGADORES
+  setJugadores(state, payload) {
+    state.jugadores = payload
   },
-  setEquipos(state, payload) {
-    state.equipos = payload
+  setJugador(state, payload) {
+    state.jugador = payload
   },
-  updateEquipos(state, payload) {
-    state.equipos.push(payload)
+  updateJugador(state, payload) {
+    Object.entries(payload).forEach(campo => {
+      state.jugador[campo[0]] = campo[1]
+    });
   },
-  setRemoveEquipo(state, payload) {
-    state.equipos = state.equipos.filter(item => item.id !== payload)
-  }
 }
 
 export const actions = {
   // EQUIPO ACTUAL
-  async editEquipo({ commit, state }) {
+  async editEquipo({ commit }, equipo) {
     try {
-      const res = await this.$axios.put('/equipo/', state.equipo)
-      commit('setEquipo', res.data)
+      await this.$axios.put('/equipo/', equipo).then(res => { commit('setEquipo', res.data) })
     } catch (error) {
       this.$toasted.global.defaultError({
         msg: 'No se ha podido editar el equipo'
@@ -44,9 +50,7 @@ export const actions = {
   },
   async getEquipo({ commit }) {
     try {
-      const res = await this.$axios.get('/equipo/')
-      console.log(typeof res.data[0])
-      commit('setEquipo', res.data[0])
+      await this.$axios.get('/equipo/').then(res => { commit('setEquipo', res.data) })
     } catch (error) {
       this.$toasted.global.defaultError({
         msg: 'No se ha podido obtener el equipo'
@@ -58,6 +62,9 @@ export const actions = {
       await this.$axios.delete('/equipo/')
       commit('setEquipo', {})
     } catch (error) {
+      this.$toasted.global.defaultError({
+        msg: 'No se ha podido eliminar el equipo'
+      })
     }
   },
   async newEquipo({ commit }, equipo) {
@@ -65,8 +72,22 @@ export const actions = {
       const res = await this.$axios.post('/equipo/', equipo)
       commit('setEquipo', res.data)
     } catch (error) {
+      this.$toasted.global.defaultError({
+        msg: 'No se ha podido crear el equipo'
+      })
     }
   },
+  // JUGADORES
+  async getJugador({ commit }) {
+    try {
+      await this.$axios.get('/jugadores/').then(res => { commit('setJugadores', res.data) })
+    } catch (error) {
+      this.$toasted.global.defaultError({
+        msg: 'No se ha podido obtener los jugadores'
+      })
+    }
+  },
+  // JUGADORES
   // async newEquipo({ commit }, equipo) {
   //   try {
   //     const res = await this.$axios.post('/equipo/', equipo)

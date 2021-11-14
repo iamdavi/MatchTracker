@@ -52,6 +52,7 @@ export default {
     '@nuxtjs/axios',
     // https://auth.nuxtjs.org/
     '@nuxtjs/auth-next',
+    '@nuxtjs/vuetify',
     '@nuxtjs/toast',
     'nuxt-material-design-icons',
   ],

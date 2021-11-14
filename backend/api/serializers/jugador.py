@@ -1,10 +1,10 @@
-from rest_framework.serializers import ModelSerializer, IntegerField
-from rest_framework.response import Response
+from rest_framework import serializers
 from api.models import Jugador
 
 
-class JugadorSerializer(ModelSerializer):
+class JugadorSerializer(serializers.ModelSerializer):
+    equipo = serializers.ReadOnlyField(source='equipo.nombre')
+
     class Meta:
         model = Jugador
-        fields = ["id", "nombre", "numero", "equipo", "fecha_creacion"]
-        read_only_fields = ("equipo",)
+        fields = ["nombre", "numero", "equipo"]
