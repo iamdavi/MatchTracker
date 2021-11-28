@@ -23,12 +23,47 @@
             </v-list-item-title>
           </v-list-item>
           <v-list-item link>
-            <v-list-item-title>
+      <v-dialog
+        transition="dialog-bottom-transition"
+        max-width="600"
+      >
+        <template #activator="{ on, attrs }">
+          <v-list-item-title 
+            v-bind="attrs"
+            v-on="on"
+          >
+            <v-icon color="error" class="mr-2">
+              mdi-delete
+            </v-icon> 
+            <span>Eliminar</span>
+          </v-list-item-title>
+        </template>
+        <template #default="dialog">
+          <v-card>
+            <v-card-title>
+              Estás seguro de que quieres eliminar el equipo? Perderás todos los 
+              datos registrados, las jugadas, los jugadores las estadísticas...
+            </v-card-title>
+            <v-card-actions class="d-flex justify-space-between mt-5">
+              <v-btn
+                text
+                @click="dialog.value = false"
+              >Cancelar</v-btn>
+              <v-btn
+                text
+                @click="removeEquipo(); dialog.value = false"
+              >Aceptar</v-btn>
+            </v-card-actions>
+          </v-card>
+        </template>
+      </v-dialog>
+
+            <!-- <v-list-item-title @click="eliminarEquipo()">
               <v-icon color="error" class="mr-2">
                 mdi-delete
               </v-icon> 
               <span>Eliminar</span>
-            </v-list-item-title>
+            </v-list-item-title> -->
           </v-list-item>
         </v-list>
       </v-menu>
@@ -40,6 +75,8 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
+
 export default {
   name: 'InformacionTarjeta',
   props: {
@@ -51,6 +88,12 @@ export default {
   data() {
     return {
     }
+  },
+  computed: {
+    ...mapState(['equipo'])
+  },
+  methods: {
+    ...mapActions(['removeEquipo'])
   },
 }
 </script>

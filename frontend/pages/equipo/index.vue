@@ -49,11 +49,11 @@ export default {
     return {
 			e1: 1,
 			valid: false,
-			menu: false,
+			menu: false
     }
   },
   computed: {
-    ...mapState(['equipo']),
+    ...mapState(['equipo', 'equipoYaExiste']),
 		yaExiste() {
 			return this.equipo.nombre !== ''
 		},
@@ -67,7 +67,7 @@ export default {
   methods: {
 	  ...mapActions(['getEquipo', 'newEquipo', 'editEquipo']),
 	  formEquipo() {
-		  if (this.yaExiste) {
+		  if (this.equipoYaExiste) {
 				this.editEquipo(this.equipo);
 			} else {
 				this.newEquipo(this.equipo);

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row v-if="equipo">
+    <v-row v-if="equipo.nombre">
       <v-col cols="12" sm="12" md="6">
 		    <h1>Información</h1>
         <informacion-tarjeta :equipo="equipo" />
@@ -10,14 +10,14 @@
           <h1>Jugadores</h1>
           <v-btn color="primary" to="/jugadores">Ver todo</v-btn>
         </div>
-        <tabla-jugadores />
+        <tabla-jugadores :items-per-page="7" />
       </v-col>
     </v-row>
 
     <v-row v-else>
       <v-col cols="12" class="text-center mt-5">
         <h1>Vaya! Parece que no has creado ningún equipo</h1>
-        <h3 class="mt-3">Prueba a crear uno <a to="/equipo/new">aquí.</a></h3>
+        <h3 class="mt-3">Prueba a crear uno <NuxtLink to="/equipo">aquí.</NuxtLink></h3>
       </v-col>
     </v-row>
 

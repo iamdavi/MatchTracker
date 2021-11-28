@@ -129,8 +129,7 @@ export default {
     register: [
       {
         name: 'defaultSuccess',
-        message: (payload) =>
-          !payload.msg ? 'Operación realizada correctamente' : payload.msg,
+        message: (payload) => !payload.msg ? 'Operación realizada correctamente' : payload.msg,
         options: {
           type: 'success',
           icon: 'check'
@@ -138,10 +137,25 @@ export default {
       },
       {
         name: 'defaultError',
-        message: (payload) =>
-          !payload.msg ? 'Ops... error inesperado' : payload.msg,
+        message: (payload) => !payload.msg ? 'Ops... error inesperado' : payload.msg,
         options: {
           type: 'error',
+          icon: 'cross'
+        }
+      },
+      {
+        name: 'defaultInfo',
+        message: (payload) => !payload.msg ? 'Esto es una ayuda' : payload.msg,
+        options: {
+          type: 'info',
+          icon: 'cross'
+        }
+      },
+      {
+        name: 'defaultWarning',
+        message: (payload) => !payload.msg ? 'Ha saltado una alerta' : payload.msg,
+        options: {
+          type: 'warning',
           icon: 'cross'
         }
       }
