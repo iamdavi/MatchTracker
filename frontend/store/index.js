@@ -50,11 +50,26 @@ export const mutations = {
 }
 
 export const actions = {
+  async nuxtServerInit({ commit }) {
+    try {
+      await this.$axios.get('/equipo/').then(res => {
+        commit('setEquipo', res.data)
+        commit('setEquipoYaExiste', true)
+      })
+    } catch (error) {
+      commit('setEquipo', {
+        nombre: '',
+        descripcion: '',
+        color: '#1976d2'
+      })
+    }
+  },
   // EQUIPO ACTUAL
   async editEquipo({ commit }, equipo) {
     try {
       await this.$axios.put('/equipo/', equipo).then(res => {
         commit('setEquipo', res.data)
+			  this.$router.push('/')
       })
     } catch (error) {
       this.$toast.global.defaultError({
@@ -72,22 +87,29 @@ export const actions = {
       commit('setEquipo', {
         nombre: '',
         descripcion: '',
-        color: '#FFFFFF'
+        color: '#1976d2'
       })
     }
   },
   async removeEquipo({ commit }) {
     try {
-      await this.$axios.delete('/equipo/').then(() => commit('setEquipo', {}))
+      await this.$axios.delete('/equipo/').then(() => {
+        commit('setEquipo', {})
+        commit('setEquipoYaExiste', false)
+        this.$router.push('/start')
+      })
     } catch (error) {
       this.$toast.global.defaultError({
         msg: 'No se ha podido eliminar el equipo'
       })
     }
   },
-  async newEquipo({ commit }, equipo) {
+  async newEquipo({ commit, state }) {
     try {
-      await this.$axios.post('/equipo/', equipo).then(res => commit('setEquipo', res.data))
+      await this.$axios.post('/equipo/', state.equipo).then(res => {
+        commit('setEquipo', res.data)
+        commit('setEquipoYaExiste', true)
+      })
     } catch (error) {
       this.$toast.global.defaultError({
         msg: 'No se ha podido crear el equipo'
@@ -137,38 +159,4 @@ export const actions = {
       })
     }
   }
-  // async newEquipo({ commit }, equipo) {
-  //   try {
-  //     const res = await this.$axios.post('/equipo/', equipo)
-  //     commit('updateEquipos', res.data)
-  //   } catch (error) {
-  //   }
-  // },
-  // async getEquipos({ commit }) {
-  //   const equipos = []
-  //   try {
-  //     const res = await this.$axios.get('/equipos')
-  //     res.data.forEach(equipo => { equipos.push(equipo) });
-  //     commit('setEquipos', equipos)
-  //   } catch (error) {
-  //   }
-  // },
-  // EQUIPO CONCRETO
-  // async getEquipo({ commit, state }, idEquipo) {
-  //   try {
-  //     const res = await this.$axios.get(`/equipos/${idEquipo}`)
-  //     commit('setEquipo', res.data)
-  //   } catch (error) {
-  //     this.$toasted.global.defaultError({
-  //       msg: 'No se pudo obtener el equipo'
-  //     })
-  //   }
-  // },
-  // async editEquipo({ commit, state }, idEquipo) {
-  //   try {
-  //     const res = await this.$axios.put(`/equipos/${idEquipo}`, state.equipo)
-  //     commit('setEquipo', res.data)
-  //   } catch (error) {
-  //   }
-  // },
 }

@@ -68,6 +68,7 @@ export default {
   components: {
     ColorModePicker
   },
+  middleware: 'necesitaEquipo',
   data () {
     return {
       clipped: true,

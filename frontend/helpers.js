@@ -1,5 +1,5 @@
 /**
- * Función que genera objetos con propuedades que pueden modificar el estado
+ * Función que genera objetos con propiedades que pueden modificar el estado
  * del vuex generando los getters uy los setters de los campos pasados en las
  * opciones.
  * 
