@@ -72,7 +72,9 @@
           </v-card>
         </v-dialog>
 			</div>
-			<tabla-jugadores />
+      <v-card>
+			  <tabla-jugadores />
+      </v-card>
 		</v-col>
 	</v-row>
 </template>
@@ -92,15 +94,20 @@ export default {
 		TablaJugadores
 	},
   computed: {
-    ...mapState(['equipo', 'jugador']),
+    ...mapState({
+      equipo: 'equipo/equipo', 
+      jugador: 'jugador/jugador'
+    }),
 		...mapFields({
 			fields: ["numero", "nombre"],
 			base: "jugador",
-			mutation: "updateJugador"
+			mutation: "jugador/updateJugador"
 		}),
   },
 	methods: {
-		...mapActions(['newJugador']),
+		...mapActions({
+      newJugador: 'jugador/newJugador'
+    }),
 		close() {
       this.dialog = false
 		}

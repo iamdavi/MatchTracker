@@ -1,9 +1,13 @@
 from django.http.response import Http404
 from rest_framework.views import APIView
 from api.models import Equipo
+from rest_framework.decorators import api_view
 from api.serializers import EquipoSerializer
-from rest_framework import  status, permissions
+from rest_framework import  status, permissions, viewsets
 from rest_framework.response import Response
+from rest_framework.decorators import action
+from django.conf import settings
+import json
 
 
 class EquipoList(APIView):
@@ -45,3 +49,19 @@ class EquipoList(APIView):
         equipo = self.get_object(request.user)
         equipo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class EquipoViewSet(viewsets.ModelViewSet):
+    """
+    Rutas personalizadas para realizar acciones especificas
+    """
+    queryset = Equipo.objects.all()
+    serializer_class = EquipoSerializer
+
+    @action(detail=False, methods=['GET'], name="Equipos disponibles")
+    def disponibles(self, request):
+        """
+        Obtinene el JSON de las ligas y los equipos disponibles
+        """
+        return Response(settings.EQUIPO_DATA)
+

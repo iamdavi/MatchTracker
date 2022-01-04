@@ -57,6 +57,13 @@ export default {
     'nuxt-material-design-icons',
   ],
 
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  },
+
   auth: {
     strategies: {
       local: {
@@ -113,7 +120,7 @@ export default {
   },
 
   router: {
-    middleware: ['auth', 'necesitaEquipo']
+    middleware: ['auth']
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

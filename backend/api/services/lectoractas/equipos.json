@@ -1,296 +1,1081 @@
 {
-  "BERGARA K.E.": [
-    "GOROSTIDI HIDALGO MARKEL",
-    "FRIAS MARTIN ARITZ",
-    "ERAUNZETAMURGIL IPARRAGIRRE BE\u00d1AT",
-    "ELORZA GARITANO JOSEBA",
-    "PUY ERQUICIA UNAI",
-    "GOIKOETXEA LIZEAGA MARTXEL",
-    "BILBAO JUARISTI GAIZKA",
-    "ESCUDERO COSTAS ADRIAN JULEN",
-    "MUTILOA IRAZUSTA ION",
-    "LUZURIAGA GOMEZ XABIER",
-    "BATALLA OLMEDO JOKIN",
-    "RUBIO MATILLA ARITZ",
-    "DOBAO CACHAFEIRO LIER",
-    "AZKARATE MADINABEITIA JON",
-    "AGIRRE AGIRRE JOANES",
-    "LAKUNTZA LAZPIUR ASIER",
-    "NOGALES ALBERDI URKO",
-    "CECIAGA LUARIZARISTI JON",
-    "GONZALEZ MARTIN ASIER",
-    "GORRITI BENGOA IOSU",
-    "LAFUENTE CENDOYA GORKA",
-    "GOIKOETXEA FERNANDEZ ANDER",
-    "OLAZIREGI ALBERDI EKAIN",
-    "ROZAS GARCIA MARKEL",
-    "CLEMENTE GARCIA AITOR",
-    "AYESTARAN CASTA\u00d1O HODEI",
-    "IZA CABALEIRO LANDER",
-    "GOMEZ ARIZMENDI IBON",
-    "CAMARGO BAZ ANDER",
-    "JIMENEZ FLORES ANDER",
-    "ECHENIQUE CELARAIN ENEKO",
-    "GOMEZ DE BALUJERA OREGI HARITZ",
-    "LOIDI SAN SEBASTIAN UNAI",
-    "I\u00d1IGO LIZASO ENDIKA",
-    "OIARTZABAL SANCHEZ KERMAN",
-    "SAGARZAZU BELLOSO ENEKO",
-    "I\u00d1IGO LIZASO BE\u00d1AT",
-    "ETXEBERRIA GELBENZU ENEKO",
-    "BERAZA LEDESMA IKER"
-  ],
-  "LANA ALO\u00d1A MENDI K.E.": [
-    "ARREGI MARKULETA ENAITZ",
-    "AZKARATE IRIZAR ANDER",
-    "ARANBURU GOMENDIO JULEN",
-    "FRIAS MARTIN ARITZ",
-    "ZUMALDE UGARTEMENDIA ELAITZ",
-    "FERNANDEZ UNZUETA ASIER",
-    "MU\u00d1OA PERAN XABIER",
-    "MOREJON MELGARES IOSU",
-    "BOLINAGA MARTIN MIKEL",
-    "IRADI RUIZ AITOR",
-    "DE LA CRUZ URRESTI URKO",
-    "LUZURIAGA GOMEZ XABIER",
-    "MOYUA REINSTADLER IBAI",
-    "BATALLA OLMEDO JOKIN",
-    "ORMAETXEA ELKORO PERU",
-    "HERNANDEZ IDIGORAS GONZALO",
-    "BIAIN ZULUETA BE\u00d1AT",
-    "BERACOECHEA MARTIN ANDER",
-    "BAH DIALLO OUSMANE",
-    "GONZALEZ MARTIN ASIER",
-    "TELLETXEA APARICIO XABIER",
-    "CRESPO LAMARIANO IBON",
-    "PEREZ MONZON ESSEY MANEL",
-    "LEGARISTI MUGIKA XABIER",
-    "GARCIA MARTINEZ ARITZ",
-    "ARANBURU MOIUA UNAX",
-    "URIARTE AGIRRE JULEN",
-    "LAFUENTE CENDOYA GORKA",
-    "BENGOETXEA RODRIGUEZ UNAI",
-    "SANCHO MAIZTEGI LIHER",
-    "MAIZTEGI ARRIARAN IKER",
-    "ZARATE PAULIS ANDR\u00c9S",
-    "URIA DIEZ AITOR",
-    "AYESTARAN CASTA\u00d1O HODEI",
-    "TABERNA GARBIZU AITOR",
-    "BERASARTE URKIA IMANOL",
-    "PRIETO RODRIGUEZ UNAI",
-    "ARIZAGA GUERRA URTZI",
-    "ECHENIQUE CELARAIN ENEKO",
-    "BAUTISTA BERMEJO JOKIN",
-    "ALTZELAI SANTA CRUZ ANDER",
-    "OIARTZABAL SANCHEZ KERMAN",
-    "ALBAS IBEAS XABIER",
-    "SAGARZAZU BELLOSO ENEKO",
-    "BERAZA LEDESMA IKER",
-    "LORENZO CARBAJO I\u00d1IGO"
-  ],
-  "C.D.B. LEIZARAN ERNIO INMOBILIARIA": [
-    "AMENABAR ARSUAGA ARKAITZ",
-    "JIMENEZ SORIANO AIMAR",
-    "ALA\u00d1A ZUBELDIA HARITZ",
-    "DAVILA ZUAZO DAVID",
-    "BROSA LACALLE ENEKO",
-    "CALLEJON DUARTE JULEN",
-    "ZABALA MARTIN OIER",
-    "GALPARSORO DEL POZO XABIER",
-    "RODRIGUEZ LEAL JAVIER",
-    "ARIAS JIMENEZ JOSU",
-    "BEROZ ROJAS ANDER",
-    "BIURRUN GARCIA MIKEL",
-    "GARNACHO CRIADO MIKEL",
-    "GALLEGO GOMEZ BE\u00d1AT",
-    "BALTASAR LOPEZ BE\u00d1AT",
-    "EGA\u00d1A GASTON ANDER",
-    "MELENDEZ AMEZTEGUI ANDER",
-    "MEJIA MIRANDA JORGE"
-  ],
-  "NEUMATICOS BAYONA PULPO": [
-    "OSTOLAZA ARROITAJAUREGIA I\u00d1IGO",
-    "FRIAS MARTIN ARITZ",
-    "ARMENDARIZ KORTA IGOR",
-    "MARTIN BARANDIARAN JULEN",
-    "ERAUNZETAMURGIL IPARRAGIRRE BE\u00d1AT",
-    "YEREGI EGA\u00d1A XEBE",
-    "ARMENDARIZ KORTA MANEX",
-    "ARMENDARIZ KORTA LANDER",
-    "GOIKOETXEA LIZEAGA MARTXEL",
-    "ESCUDERO COSTAS ADRIAN JULEN",
-    "LARRA\u00d1AGA JIMENEZ OIER",
-    "WANNAS BENTACHIFINE ANNAS",
-    "MUTILOA IRAZUSTA ION",
-    "LUZURIAGA GOMEZ XABIER",
-    "BATALLA OLMEDO JOKIN",
-    "LOPEZ DE GOIKOETXEA ETXEBERRIA I\u00d1IGO",
-    "AGIRRE AGIRRE JOANES",
-    "GONZALEZ MARTIN ASIER",
-    "LAFUENTE CENDOYA GORKA",
-    "PONCE PLAZA IORITZ",
-    "HERNANDEZ BLANCO DAVID",
-    "GOIKOETXEA FERNANDEZ ANDER",
-    "MANTEROLA TENA GALDER",
-    "EIZAGIRRE PECHARROMAN ANDER",
-    "ARRIETA AZPIAZU ARATZ",
-    "ROZAS GARCIA MARKEL",
-    "CLEMENTE GARCIA AITOR",
-    "AYESTARAN CASTA\u00d1O HODEI",
-    "ERQUICIA DO NASCIMIENTO ALEX",
-    "IZA CABALEIRO LANDER",
-    "BALLESTEROS GONZALEZ MIKEL",
-    "GARCIA OYAGA AKETZA",
-    "ROMATET AMILIBIA ANDER",
-    "CAMARGO BAZ ANDER",
-    "ECHENIQUE CELARAIN ENEKO",
-    "I\u00d1IGO LIZASO ENDIKA",
-    "OIARTZABAL SANCHEZ KERMAN",
-    "SAGARZAZU BELLOSO ENEKO",
-    "BARRADO SILVA GAIZKA",
-    "I\u00d1IGO LIZASO BE\u00d1AT",
-    "ETXEBERRIA GELBENZU ENEKO",
-    "HUALDE ORDIOZOLA I\u00d1IGO",
-    "BERAZA LEDESMA IKER"
-  ],
-  "MUNTTARPE": [
-    "AMIGOT ESNAOLA MIKEL",
-    "ZANGITU MONTOYA HODEI",
-    "PJEROTIC OLASAGASTI MARINO",
-    "ELKANO SEGUROLA ENETZ",
-    "CAMARA SOLANO ANDER",
-    "PREGO AROSTEGUI IKER",
-    "HERRERA AROCENA JON",
-    "OTERO MATO DAVID",
-    "RUFO MARTIN GORKA",
-    "CABELLO MARTOS MIKEL",
-    "LIZARBE SIMON I\u00d1AKI",
-    "OIARTZABAL LARZABAL ADUR",
-    "TOLARETXIPI MATZIZIOR ARITZ",
-    "MITXELENA SARASOLA ANDER",
-    "LUJAMBIO GALPARSORO URTZI",
-    "IZULAIN ALEJOS I\u00d1IGO"
-  ],
-  "DONIBANE ESKUBALOIA": [
-    "OSTOLAZA ARROITAJAUREGIA I\u00d1IGO",
-    "FRIAS MARTIN ARITZ",
-    "ARMENDARIZ KORTA IGOR",
-    "FERNANDEZ UNZUETA ASIER",
-    "MU\u00d1OA PERAN XABIER",
-    "PUY ERQUICIA UNAI",
-    "YEREGI EGA\u00d1A XEBE",
-    "ARMENDARIZ KORTA LANDER",
-    "MOREJON MELGARES IOSU",
-    "ESCUDERO COSTAS ADRIAN JULEN",
-    "LARRA\u00d1AGA JIMENEZ OIER",
-    "IRADI RUIZ AITOR",
-    "WANNAS BENTACHIFINE ANNAS",
-    "LUZURIAGA GOMEZ XABIER",
-    "BATALLA OLMEDO JOKIN",
-    "HERNANDEZ IDIGORAS GONZALO",
-    "ORMAETXEA ELKORO PERU",
-    "BERACOECHEA MARTIN ANDER",
-    "LOPEZ DE GOIKOETXEA ETXEBERRIA I\u00d1IGO",
-    "GONZALEZ MARTIN ASIER",
-    "GARCIA MARTINEZ ARITZ",
-    "PEREZ MONZON ESSEY MANEL",
-    "LEGARISTI MUGIKA XABIER",
-    "UBIRIA PEREZ MIKEL",
-    "LAFUENTE CENDOYA GORKA",
-    "BENGOETXEA RODRIGUEZ UNAI",
-    "PONCE PLAZA IORITZ",
-    "MAIZTEGI ARRIARAN IKER",
-    "GUTIERREZ ESTEBANEZ PEDRO FRANCISCO",
-    "ZARATE PAULIS ANDR\u00c9S",
-    "MANTEROLA TENA GALDER",
-    "EIZAGIRRE PECHARROMAN ANDER",
-    "HERMOSA GAVIRIA MIKEL",
-    "URIA DIEZ AITOR",
-    "AYESTARAN CASTA\u00d1O HODEI",
-    "TABERNA GARBIZU AITOR",
-    "ERQUICIA DO NASCIMIENTO ALEX",
-    "BALLESTEROS GONZALEZ MIKEL",
-    "GARCIA OYAGA AKETZA",
-    "BERASARTE URKIA IMANOL",
-    "ARIZAGA GUERRA URTZI",
-    "ECHENIQUE CELARAIN ENEKO",
-    "ALBAS IBEAS XABIER",
-    "OIARTZABAL SANCHEZ KERMAN",
-    "SAGARZAZU BELLOSO ENEKO",
-    "BARRADO SILVA GAIZKA",
-    "BERAZA LEDESMA IKER"
-  ],
-  "TXINGUDI GOSER": [
-    "ALACANO LADRON DE GUEVARA I\u00d1AKI",
-    "LOPEZ UNZUE PABLO",
-    "ROMO GALLEGO JON",
-    "ARRUABARRENA JUARROS JON",
-    "SILVO CILLEROS JON",
-    "BARTOLOME ODRIOZOLA MIKEL",
-    "MERINO GAZTELUMENDI I\u00d1IGO",
-    "VIDAURRE MARTINEZ MARTIN",
-    "PENELLA RAMOS IBAI",
-    "PAGOLA URTIZBEREA ARITZ",
-    "SCHNITGER MU\u00d1OZ AXEL",
-    "CAMPO JUARROS I\u00d1IGO",
-    "DORRONSORO LARRUSCAIN OIER",
-    "TERROBA ARMENDARIZ ANDER",
-    "GARNICA HUARTE SAMUEL",
-    "GARCIA SIERRA CHRISTIAN",
-    "NIEVA CASTRO KIMETZ"
-  ],
-  "HERNANI ANEXO ELEKTROTRESNAK": [
-    "MUTILOA IRAZUSTA ION",
-    "GOIKOETXEA LIZEAGA MARTXEL",
-    "GOIKOETXEA FERNANDEZ ANDER",
-    "MARTIN BARANDIARAN JULEN",
-    "CAMARGO BAZ ANDER",
-    "ERAUNZETAMURGIL IPARRAGIRRE BE\u00d1AT",
-    "I\u00d1IGO LIZASO ENDIKA",
-    "AGIRRE AGIRRE JOANES",
-    "ROZAS GARCIA MARKEL",
-    "I\u00d1IGO LIZASO BE\u00d1AT",
-    "ETXEBERRIA GELBENZU ENEKO",
-    "HUALDE ORDIOZOLA I\u00d1IGO",
-    "CLEMENTE GARCIA AITOR",
-    "IZA CABALEIRO LANDER"
-  ],
-  "UROLA KLINIKA ALAI": [
-    "AGIRRE VAZQUEZ IMANOL",
-    "RODANES PEREZ JON",
-    "MARTINEZ POLO ASIER",
-    "PALMERO MOTO AIMAR",
-    "ALONSO HOLGADO IMANOL",
-    "DELGADO FERNANDEZ GORKA",
-    "ARBURUA OTERMIN HARITZ",
-    "AGUSTIN MAIZA ALEX",
-    "ORMAZABAL ALDALUR ANDER",
-    "ARRIOLA ARROYO IRAITZ",
-    "GERETA DIEZ ALEX",
-    "MEDINILLA RUIZ IORITZ",
-    "FERRERO OSINALDE OIER",
-    "CANTALAPIEDRA YURREBASO BE\u00d1AT",
-    "GURIDI CANTALAPIEDRA KERMAN",
-    "HURTADO GORDO IKER"
-  ],
-  "EGIA KATA TABERNA": [
-    "IRADI RUIZ AITOR",
-    "DE LA CRUZ URRESTI URKO",
-    "BENGOETXEA RODRIGUEZ UNAI",
-    "MAIZTEGI ARRIARAN IKER",
-    "MATUTE GORRITXO JON",
-    "ZARATE PAULIS ANDR\u00c9S",
-    "ORMAETXEA ELKORO PERU",
-    "ARIZAGA GUERRA URTZI",
-    "MU\u00d1OA PERAN XABIER",
-    "HERNANDEZ IDIGORAS GONZALO",
-    "FERNANDEZ UNZUETA ASIER",
-    "ALBAS IBEAS XABIER",
-    "HERMOSA GAVIRIA MIKEL",
-    "BERACOECHEA MARTIN ANDER",
-    "GARCIA MARTINEZ ARITZ",
-    "PEREZ MONZON ESSEY MANEL",
-    "TABERNA GARBIZU AITOR",
-    "LORENZO CARBAJO I\u00d1IGO"
+  "ligas": [
+    {
+      "nombre": "2ª Territorial masculina",
+      "equipos": {
+        "BERGARA K.E.": [
+          [
+            35,
+            "OLAZIREGI ALBERDI EKAIN"
+          ],
+          [
+            22,
+            "BILBAO JUARISTI GAIZKA"
+          ],
+          [
+            34,
+            "GORRITI BENGOA IOSU"
+          ],
+          [
+            28,
+            "LOIDI SAN SEBASTIAN UNAI"
+          ],
+          [
+            27,
+            "CECIAGA LUARIZARISTI JON"
+          ],
+          [
+            32,
+            "ELORZA GARITANO JOSEBA"
+          ],
+          [
+            91,
+            "DOBAO CACHAFEIRO LIER"
+          ],
+          [
+            99,
+            "GOMEZ ARIZMENDI IBON"
+          ],
+          [
+            33,
+            "RUBIO MATILLA ARITZ"
+          ],
+          [
+            25,
+            "JIMENEZ FLORES ANDER"
+          ],
+          [
+            72,
+            "GOMEZ DE BALUJERA OREGI HARITZ"
+          ],
+          [
+            37,
+            "NOGALES ALBERDI URKO"
+          ],
+          [
+            93,
+            "GOROSTIDI HIDALGO MARKEL"
+          ],
+          [
+            30,
+            "BILBAO JUARISTI GAIZKA"
+          ],
+          [
+            24,
+            "AZKARATE MADINABEITIA JON"
+          ]
+        ],
+        "BILBAO JUARISTI GAIZKA": [
+          [
+            3,
+            "ZUMALDE UGARTEMENDIA ELAITZ"
+          ],
+          [
+            12,
+            "PRIETO RODRIGUEZ UNAI"
+          ],
+          [
+            17,
+            "SANCHO MAIZTEGI LIHER"
+          ],
+          [
+            18,
+            "BAH DIALLO OUSMANE"
+          ],
+          [
+            8,
+            "ARREGI MARKULETA ENAITZ"
+          ],
+          [
+            9,
+            "MOYUA REINSTADLER IBAI"
+          ],
+          [
+            7,
+            "BAUTISTA BERMEJO JOKIN"
+          ],
+          [
+            10,
+            "CRESPO LAMARIANO IBON"
+          ],
+          [
+            6,
+            "AZKARATE IRIZAR ANDER"
+          ],
+          [
+            11,
+            "ARANBURU GOMENDIO JULEN"
+          ],
+          [
+            1,
+            "URIARTE AGIRRE JULEN"
+          ],
+          [
+            2,
+            "BOLINAGA MARTIN MIKEL"
+          ]
+        ],
+        "HERNANI ANEXO ELEKTROTRESNAK": [
+          [
+            9,
+            "CAMARGO BAZ ANDER"
+          ],
+          [
+            6,
+            "MARTIN BARANDIARAN JULEN"
+          ],
+          [
+            2,
+            "GOIKOETXEA FERNANDEZ ANDER"
+          ],
+          [
+            8,
+            "CLEMENTE GARCIA AITOR"
+          ],
+          [
+            4,
+            "AGIRRE AGIRRE JOANES"
+          ],
+          [
+            11,
+            "IZA CABALEIRO LANDER"
+          ],
+          [
+            36,
+            "MUTILOA IRAZUSTA ION"
+          ],
+          [
+            42,
+            "HUALDE ORDIOZOLA I\u00d1IGO"
+          ],
+          [
+            3,
+            "I\u00d1IGO LIZASO BE\u00d1AT"
+          ],
+          [
+            17,
+            "ROZAS GARCIA MARKEL"
+          ],
+          [
+            7,
+            "I\u00d1IGO LIZASO ENDIKA"
+          ],
+          [
+            14,
+            "GOIKOETXEA LIZEAGA MARTXEL"
+          ],
+          [
+            10,
+            "ERAUNZETAMURGIL IPARRAGIRRE BE\u00d1AT"
+          ],
+          [
+            13,
+            "ETXEBERRIA GELBENZU ENEKO"
+          ]
+        ],
+        "DONIBANE ESKUBALOIA": [
+          [
+            32,
+            "PUY ERQUICIA UNAI"
+          ],
+          [
+            69,
+            "SAGARZAZU BELLOSO ENEKO"
+          ],
+          [
+            78,
+            "AYESTARAN CASTA\u00d1O HODEI"
+          ],
+          [
+            2,
+            "ECHENIQUE CELARAIN ENEKO"
+          ],
+          [
+            5,
+            "LAFUENTE CENDOYA GORKA"
+          ],
+          [
+            18,
+            "GARCIA OYAGA AKETZA"
+          ],
+          [
+            74,
+            "BARRADO SILVA GAIZKA"
+          ],
+          [
+            71,
+            "LEGARISTI MUGIKA XABIER"
+          ],
+          [
+            43,
+            "TELLETXEA APARICIO XABIER"
+          ],
+          [
+            25,
+            "BERAZA LEDESMA IKER"
+          ],
+          [
+            16,
+            "OIARTZABAL SANCHEZ KERMAN"
+          ],
+          [
+            29,
+            "BATALLA OLMEDO JOKIN"
+          ],
+          [
+            77,
+            "GONZALEZ MARTIN ASIER"
+          ],
+          [
+            17,
+            "ESCUDERO COSTAS ADRIAN JULEN"
+          ],
+          [
+            90,
+            "URIA DIEZ AITOR"
+          ],
+          [
+            4,
+            "LUZURIAGA GOMEZ XABIER"
+          ],
+          [
+            88,
+            "MOREJON MELGARES IOSU"
+          ],
+          [
+            73,
+            "BERASARTE URKIA IMANOL"
+          ],
+          [
+            27,
+            "FRIAS MARTIN ARITZ"
+          ],
+          [
+            37,
+            "GUTIERREZ ESTEBANEZ PEDRO FRANCISCO"
+          ]
+        ],
+        "C.D.B. LEIZARAN ERNIO INMOBILIARIA": [
+          [
+            98,
+            "BEROZ ROJAS ANDER"
+          ],
+          [
+            3,
+            "BROSA LACALLE ENEKO"
+          ],
+          [
+            12,
+            "ALA\u00d1A ZUBELDIA HARITZ"
+          ],
+          [
+            16,
+            "CALLEJON DUARTE JULEN"
+          ],
+          [
+            21,
+            "BEROZ ROJAS ANDER"
+          ],
+          [
+            1,
+            "AMENABAR ARSUAGA ARKAITZ"
+          ],
+          [
+            11,
+            "MEJIA MIRANDA JORGE"
+          ],
+          [
+            6,
+            "EGA\u00d1A GASTON ANDER"
+          ],
+          [
+            18,
+            "JIMENEZ SORIANO AIMAR"
+          ],
+          [
+            15,
+            "BALTASAR LOPEZ BE\u00d1AT"
+          ],
+          [
+            4,
+            "ARIAS JIMENEZ JOSU"
+          ],
+          [
+            5,
+            "ZABALA MARTIN OIER"
+          ],
+          [
+            9,
+            "MELENDEZ AMEZTEGUI ANDER"
+          ],
+          [
+            13,
+            "DAVILA ZUAZO DAVID"
+          ],
+          [
+            19,
+            "BALTASAR LOPEZ BE\u00d1AT"
+          ],
+          [
+            2,
+            "GALLEGO GOMEZ BE\u00d1AT"
+          ],
+          [
+            14,
+            "BIURRUN GARCIA MIKEL"
+          ],
+          [
+            10,
+            "RODRIGUEZ LEAL JAVIER"
+          ],
+          [
+            16,
+            "EGA\u00d1A GASTON ANDER"
+          ],
+          [
+            17,
+            "GALPARSORO DEL POZO XABIER"
+          ],
+          [
+            4,
+            "GARNACHO CRIADO MIKEL"
+          ]
+        ],
+        "AMENABAR ARSUAGA ARKAITZ": [
+          [
+            3,
+            "ZUMALDE UGARTEMENDIA ELAITZ"
+          ],
+          [
+            23,
+            "PEREZ MONZON ESSEY MANEL"
+          ],
+          [
+            18,
+            "BAH DIALLO OUSMANE"
+          ],
+          [
+            9,
+            "MOYUA REINSTADLER IBAI"
+          ],
+          [
+            28,
+            "LOIDI SAN SEBASTIAN UNAI"
+          ],
+          [
+            33,
+            "ALBAS IBEAS XABIER"
+          ],
+          [
+            10,
+            "CRESPO LAMARIANO IBON"
+          ],
+          [
+            33,
+            "RUBIO MATILLA ARITZ"
+          ],
+          [
+            22,
+            "ARIZAGA GUERRA URTZI"
+          ],
+          [
+            32,
+            "MU\u00d1OA PERAN XABIER"
+          ],
+          [
+            34,
+            "GORRITI BENGOA IOSU"
+          ],
+          [
+            34,
+            "TABERNA GARBIZU AITOR"
+          ],
+          [
+            16,
+            "BERACOECHEA MARTIN ANDER"
+          ],
+          [
+            7,
+            "BAUTISTA BERMEJO JOKIN"
+          ],
+          [
+            40,
+            "FERNANDEZ UNZUETA ASIER"
+          ],
+          [
+            38,
+            "LAKUNTZA LAZPIUR ASIER"
+          ],
+          [
+            6,
+            "AZKARATE IRIZAR ANDER"
+          ],
+          [
+            11,
+            "ARANBURU GOMENDIO JULEN"
+          ],
+          [
+            1,
+            "URIARTE AGIRRE JULEN"
+          ],
+          [
+            30,
+            "BILBAO JUARISTI GAIZKA"
+          ],
+          [
+            12,
+            "PRIETO RODRIGUEZ UNAI"
+          ],
+          [
+            17,
+            "SANCHO MAIZTEGI LIHER"
+          ],
+          [
+            30,
+            "MATUTE GORRITXO JON"
+          ],
+          [
+            72,
+            "GOMEZ DE BALUJERA OREGI HARITZ"
+          ],
+          [
+            39,
+            "MAIZTEGI ARRIARAN IKER"
+          ],
+          [
+            24,
+            "AZKARATE MADINABEITIA JON"
+          ],
+          [
+            41,
+            "LORENZO CARBAJO I\u00d1IGO"
+          ],
+          [
+            35,
+            "OLAZIREGI ALBERDI EKAIN"
+          ],
+          [
+            31,
+            "GARCIA MARTINEZ ARITZ"
+          ],
+          [
+            29,
+            "HERMOSA GAVIRIA MIKEL"
+          ],
+          [
+            35,
+            "BENGOETXEA RODRIGUEZ UNAI"
+          ],
+          [
+            36,
+            "HERNANDEZ IDIGORAS GONZALO"
+          ],
+          [
+            27,
+            "CECIAGA LUARIZARISTI JON"
+          ],
+          [
+            47,
+            "ZARATE PAULIS ANDR\u00c9S"
+          ],
+          [
+            91,
+            "DOBAO CACHAFEIRO LIER"
+          ],
+          [
+            4,
+            "BOLINAGA MARTIN MIKEL"
+          ],
+          [
+            25,
+            "JIMENEZ FLORES ANDER"
+          ],
+          [
+            12,
+            "DE LA CRUZ URRESTI URKO"
+          ]
+        ],
+        "NEUMATICOS BAYONA PULPO": [
+          [
+            20,
+            "LOPEZ DE GOIKOETXEA ETXEBERRIA I\u00d1IGO"
+          ],
+          [
+            38,
+            "ARMENDARIZ KORTA LANDER"
+          ],
+          [
+            53,
+            "ARMENDARIZ KORTA IGOR"
+          ],
+          [
+            12,
+            "ARRIETA AZPIAZU ARATZ"
+          ],
+          [
+            6,
+            "PONCE PLAZA IORITZ"
+          ],
+          [
+            16,
+            "OSTOLAZA ARROITAJAUREGIA I\u00d1IGO"
+          ],
+          [
+            8,
+            "YEREGI EGA\u00d1A XEBE"
+          ],
+          [
+            24,
+            "WANNAS BENTACHIFINE ANNAS"
+          ],
+          [
+            40,
+            "MANTEROLA TENA GALDER"
+          ],
+          [
+            13,
+            "EIZAGIRRE PECHARROMAN ANDER"
+          ],
+          [
+            28,
+            "LARRA\u00d1AGA JIMENEZ OIER"
+          ],
+          [
+            46,
+            "ERQUICIA DO NASCIMIENTO ALEX"
+          ],
+          [
+            47,
+            "BALLESTEROS GONZALEZ MIKEL"
+          ],
+          [
+            26,
+            "HERNANDEZ BLANCO DAVID"
+          ]
+        ],
+        "LANA ALO\u00d1A MENDI K.E.": [
+          [
+            3,
+            "ZUMALDE UGARTEMENDIA ELAITZ"
+          ],
+          [
+            12,
+            "PRIETO RODRIGUEZ UNAI"
+          ],
+          [
+            16,
+            "BIAIN ZULUETA BE\u00d1AT"
+          ],
+          [
+            17,
+            "SANCHO MAIZTEGI LIHER"
+          ],
+          [
+            18,
+            "BAH DIALLO OUSMANE"
+          ],
+          [
+            8,
+            "ARREGI MARKULETA ENAITZ"
+          ],
+          [
+            9,
+            "MOYUA REINSTADLER IBAI"
+          ],
+          [
+            11,
+            "ARANBURU MOIUA UNAX"
+          ],
+          [
+            20,
+            "ALTZELAI SANTA CRUZ ANDER"
+          ],
+          [
+            7,
+            "BAUTISTA BERMEJO JOKIN"
+          ],
+          [
+            10,
+            "CRESPO LAMARIANO IBON"
+          ],
+          [
+            6,
+            "AZKARATE IRIZAR ANDER"
+          ],
+          [
+            4,
+            "BOLINAGA MARTIN MIKEL"
+          ],
+          [
+            11,
+            "ARANBURU GOMENDIO JULEN"
+          ],
+          [
+            15,
+            "ARANBURU MOIUA UNAX"
+          ],
+          [
+            1,
+            "URIARTE AGIRRE JULEN"
+          ],
+          [
+            15,
+            "ARANBURU GOMENDIO JULEN"
+          ],
+          [
+            16,
+            "BAH DIALLO OUSMANE"
+          ]
+        ],
+        "EGIA KATA TABERNA": [
+          [
+            23,
+            "PEREZ MONZON ESSEY MANEL"
+          ],
+          [
+            27,
+            "PEREZ MONZON ESSEY MANEL"
+          ],
+          [
+            29,
+            "HERNANDEZ IDIGORAS GONZALO"
+          ],
+          [
+            26,
+            "GARCIA MARTINEZ ARITZ"
+          ],
+          [
+            71,
+            "ORMAETXEA ELKORO PERU"
+          ],
+          [
+            12,
+            "BERACOECHEA MARTIN ANDER"
+          ],
+          [
+            33,
+            "ALBAS IBEAS XABIER"
+          ],
+          [
+            47,
+            "FERNANDEZ UNZUETA ASIER"
+          ],
+          [
+            15,
+            "ALBAS IBEAS XABIER"
+          ],
+          [
+            37,
+            "IRADI RUIZ AITOR"
+          ],
+          [
+            22,
+            "ARIZAGA GUERRA URTZI"
+          ],
+          [
+            42,
+            "ZARATE PAULIS ANDR\u00c9S"
+          ],
+          [
+            32,
+            "MU\u00d1OA PERAN XABIER"
+          ],
+          [
+            34,
+            "TABERNA GARBIZU AITOR"
+          ],
+          [
+            16,
+            "BERACOECHEA MARTIN ANDER"
+          ],
+          [
+            69,
+            "BENGOETXEA RODRIGUEZ UNAI"
+          ],
+          [
+            40,
+            "FERNANDEZ UNZUETA ASIER"
+          ],
+          [
+            67,
+            "MU\u00d1OA PERAN XABIER"
+          ],
+          [
+            30,
+            "MATUTE GORRITXO JON"
+          ],
+          [
+            2,
+            "MAIZTEGI ARRIARAN IKER"
+          ],
+          [
+            40,
+            "UBIRIA PEREZ MIKEL"
+          ],
+          [
+            1,
+            "ORMAETXEA ELKORO PERU"
+          ],
+          [
+            39,
+            "MAIZTEGI ARRIARAN IKER"
+          ],
+          [
+            41,
+            "LORENZO CARBAJO I\u00d1IGO"
+          ],
+          [
+            31,
+            "GARCIA MARTINEZ ARITZ"
+          ],
+          [
+            44,
+            "TABERNA GARBIZU AITOR"
+          ],
+          [
+            35,
+            "BENGOETXEA RODRIGUEZ UNAI"
+          ],
+          [
+            36,
+            "HERNANDEZ IDIGORAS GONZALO"
+          ],
+          [
+            62,
+            "HERMOSA GAVIRIA MIKEL"
+          ],
+          [
+            47,
+            "ZARATE PAULIS ANDR\u00c9S"
+          ],
+          [
+            91,
+            "ARIZAGA GUERRA URTZI"
+          ],
+          [
+            12,
+            "DE LA CRUZ URRESTI URKO"
+          ],
+          [
+            33,
+            "IRADI RUIZ AITOR"
+          ]
+        ],
+        "MUNTTARPE": [
+          [
+            23,
+            "MITXELENA SARASOLA ANDER"
+          ],
+          [
+            18,
+            "HERRERA AROCENA JON"
+          ],
+          [
+            26,
+            "OTERO MATO DAVID"
+          ],
+          [
+            24,
+            "ZANGITU MONTOYA HODEI"
+          ],
+          [
+            22,
+            "AMIGOT ESNAOLA MIKEL"
+          ],
+          [
+            27,
+            "RUFO MARTIN GORKA"
+          ],
+          [
+            5,
+            "ELKANO SEGUROLA ENETZ"
+          ],
+          [
+            7,
+            "PREGO AROSTEGUI IKER"
+          ],
+          [
+            9,
+            "PJEROTIC OLASAGASTI MARINO"
+          ],
+          [
+            1,
+            "LIZARBE SIMON I\u00d1AKI"
+          ],
+          [
+            4,
+            "LUJAMBIO GALPARSORO URTZI"
+          ],
+          [
+            34,
+            "TOLARETXIPI MATZIZIOR ARITZ"
+          ],
+          [
+            14,
+            "CAMARA SOLANO ANDER"
+          ],
+          [
+            15,
+            "PREGO AROSTEGUI IKER"
+          ],
+          [
+            20,
+            "IZULAIN ALEJOS I\u00d1IGO"
+          ],
+          [
+            11,
+            "OIARTZABAL LARZABAL ADUR"
+          ],
+          [
+            19,
+            "CABELLO MARTOS MIKEL"
+          ]
+        ],
+        "TXINGUDI GOSER": [
+          [
+            26,
+            "TERROBA ARMENDARIZ ANDER"
+          ],
+          [
+            18,
+            "ALACANO LADRON DE GUEVARA I\u00d1AKI"
+          ],
+          [
+            25,
+            "PENELLA RAMOS IBAI"
+          ],
+          [
+            33,
+            "SILVO CILLEROS JON"
+          ],
+          [
+            69,
+            "PAGOLA URTIZBEREA ARITZ"
+          ],
+          [
+            7,
+            "DORRONSORO LARRUSCAIN OIER"
+          ],
+          [
+            19,
+            "GARNICA HUARTE SAMUEL"
+          ],
+          [
+            23,
+            "ROMO GALLEGO JON"
+          ],
+          [
+            99,
+            "GARCIA SIERRA CHRISTIAN"
+          ],
+          [
+            4,
+            "LOPEZ UNZUE PABLO"
+          ],
+          [
+            77,
+            "SCHNITGER MU\u00d1OZ AXEL"
+          ],
+          [
+            13,
+            "MERINO GAZTELUMENDI I\u00d1IGO"
+          ],
+          [
+            78,
+            "BARTOLOME ODRIOZOLA MIKEL"
+          ],
+          [
+            1,
+            "NIEVA CASTRO KIMETZ"
+          ],
+          [
+            12,
+            "ARRUABARRENA JUARROS JON"
+          ],
+          [
+            8,
+            "VIDAURRE MARTINEZ MARTIN"
+          ],
+          [
+            20,
+            "CAMPO JUARROS I\u00d1IGO"
+          ]
+        ],
+        "NIEVA CASTRO KIMETZ": [
+          [
+            6,
+            "MARTIN BARANDIARAN JULEN"
+          ],
+          [
+            9,
+            "CAMARGO BAZ ANDER"
+          ],
+          [
+            2,
+            "GOIKOETXEA FERNANDEZ ANDER"
+          ],
+          [
+            8,
+            "CLEMENTE GARCIA AITOR"
+          ],
+          [
+            4,
+            "AGIRRE AGIRRE JOANES"
+          ],
+          [
+            11,
+            "IZA CABALEIRO LANDER"
+          ],
+          [
+            36,
+            "MUTILOA IRAZUSTA ION"
+          ],
+          [
+            3,
+            "I\u00d1IGO LIZASO BE\u00d1AT"
+          ],
+          [
+            17,
+            "ROZAS GARCIA MARKEL"
+          ],
+          [
+            7,
+            "I\u00d1IGO LIZASO ENDIKA"
+          ],
+          [
+            14,
+            "GOIKOETXEA LIZEAGA MARTXEL"
+          ],
+          [
+            10,
+            "ERAUNZETAMURGIL IPARRAGIRRE BE\u00d1AT"
+          ],
+          [
+            13,
+            "ETXEBERRIA GELBENZU ENEKO"
+          ]
+        ],
+        "UROLA KLINIKA ALAI": [
+          [
+            9,
+            "AGIRRE VAZQUEZ IMANOL"
+          ],
+          [
+            51,
+            "FERRERO OSINALDE OIER"
+          ],
+          [
+            8,
+            "DELGADO FERNANDEZ GORKA"
+          ],
+          [
+            3,
+            "ARRIOLA ARROYO IRAITZ"
+          ],
+          [
+            82,
+            "CANTALAPIEDRA YURREBASO BE\u00d1AT"
+          ],
+          [
+            13,
+            "MARTINEZ POLO ASIER"
+          ],
+          [
+            11,
+            "ARBURUA OTERMIN HARITZ"
+          ],
+          [
+            15,
+            "HURTADO GORDO IKER"
+          ],
+          [
+            1,
+            "GURIDI CANTALAPIEDRA KERMAN"
+          ],
+          [
+            21,
+            "ALONSO HOLGADO IMANOL"
+          ],
+          [
+            7,
+            "ORMAZABAL ALDALUR ANDER"
+          ],
+          [
+            6,
+            "GERETA DIEZ ALEX"
+          ],
+          [
+            75,
+            "PALMERO MOTO AIMAR"
+          ],
+          [
+            22,
+            "AGUSTIN MAIZA ALEX"
+          ],
+          [
+            2,
+            "RODANES PEREZ JON"
+          ],
+          [
+            20,
+            "MEDINILLA RUIZ IORITZ"
+          ]
+        ],
+        "GURIDI CANTALAPIEDRA KERMAN *": [
+          [
+            57,
+            "ROMATET AMILIBIA ANDER"
+          ],
+          [
+            38,
+            "ARMENDARIZ KORTA LANDER"
+          ],
+          [
+            53,
+            "ARMENDARIZ KORTA IGOR"
+          ],
+          [
+            12,
+            "ARRIETA AZPIAZU ARATZ"
+          ],
+          [
+            6,
+            "PONCE PLAZA IORITZ"
+          ],
+          [
+            24,
+            "WANNAS BENTACHIFINE ANNAS"
+          ],
+          [
+            8,
+            "YEREGI EGA\u00d1A XEBE"
+          ],
+          [
+            40,
+            "MANTEROLA TENA GALDER"
+          ],
+          [
+            13,
+            "EIZAGIRRE PECHARROMAN ANDER"
+          ],
+          [
+            28,
+            "LARRA\u00d1AGA JIMENEZ OIER"
+          ],
+          [
+            46,
+            "ERQUICIA DO NASCIMIENTO ALEX"
+          ],
+          [
+            47,
+            "BALLESTEROS GONZALEZ MIKEL"
+          ],
+          [
+            30,
+            "ARMENDARIZ KORTA MANEX"
+          ]
+        ]
+      }
+    }
   ]
 }

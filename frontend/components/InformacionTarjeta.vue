@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title>
-      <span :style="{ 'color': equipo.color }">{{ equipo.nombre }}</span>
+      <span>{{ equipo.nombre }}</span>
       <v-spacer></v-spacer>
       <v-menu offset-y left>
         <template #activator="{ on, attrs }">
@@ -83,7 +83,9 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['removeEquipo']),
+    ...mapActions({
+      removeEquipo: 'equipo/removeEquipo'
+    }),
     removeAction() {
       this.removeEquipo()
       this.dialog.value = false

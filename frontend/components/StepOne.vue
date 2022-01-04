@@ -1,11 +1,11 @@
 <template>
 	<div>
 		<v-select
-			v-model="ligaSeleccionada"
+			v-model="liga"
 			label="Liga en la que juegas"
 			class="pt-0"
 			:items="ligas"
-			@change="getEquiposDb()"
+			@change="getEquiposFromLiga()"
 		></v-select>
 
 		<v-select
@@ -16,31 +16,39 @@
 	</div>
 </template>
 <script>
-import equiposDb from '@/data/equipos.json'
+import { mapActions } from 'vuex'
 import { mapFields } from '@/helpers'
 
 export default {
 	name: 'StepOne',
 	data() {
 		return {
-			ligas: [],
 			equipos: [],
-			ligaSeleccionada: null
+			ligaSeleccionada: '',
 		}
 	},
 	computed: {
+		ligas() {
+			if (this.$store.state.equipo.ligas.ligas) {
+				return this.$store.state.equipo.ligas.ligas.map(liga => liga.nombre);
+			}
+			return []
+		},
 		...mapFields({
-			fields: ["nombre"],
+			fields: ["nombre", "liga"],
 			base: "equipo",
-			mutation: "updateEquipo"
+			mutation: "equipo/updateEquipo"
 		}),
 	},
 	created() {
-		this.ligas = equiposDb.ligas.map(liga => liga.nombre);
+		this.getEquiposDisponibles();
 	},
 	methods: {
-		getEquiposDb() {
-			this.equipos = Object.keys(equiposDb.ligas.find(liga => liga.nombre === this.ligaSeleccionada).equipos);
+		...mapActions({
+			getEquiposDisponibles: 'equipo/getLigasEquiposDisponibles'
+		}),
+		getEquiposFromLiga() {
+			this.equipos = Object.keys(this.$store.state.equipo.ligas.ligas.find(liga => liga.nombre === this.$store.state.equipo.equipo.liga).equipos);
 		}
 	},
 }

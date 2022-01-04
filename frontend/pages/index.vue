@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row v-if="equipo.nombre">
+    <v-row>
       <v-col cols="12" sm="12" md="6">
 		    <h1>Información</h1>
         <informacion-tarjeta :equipo="equipo" />
@@ -10,22 +10,16 @@
           <h1>Jugadores</h1>
           <v-btn color="primary" to="/jugadores">Ver todo</v-btn>
         </div>
-        <tabla-jugadores :items-per-page="7" />
+        <v-card>
+          <tabla-jugadores :items-per-page="7" />
+        </v-card>
       </v-col>
     </v-row>
-
-    <v-row v-else>
-      <v-col cols="12" class="text-center mt-5">
-        <h1>Vaya! Parece que no has creado ningún equipo</h1>
-        <h3 class="mt-3">Prueba a crear uno <NuxtLink to="/equipo">aquí.</NuxtLink></h3>
-      </v-col>
-    </v-row>
-
   </div>
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+import { mapActions } from 'vuex'
 import TablaJugadores from '@/components/TablaJugadores'
 import InformacionTarjeta from '@/components/InformacionTarjeta'
 
@@ -35,15 +29,25 @@ export default {
     TablaJugadores,
     InformacionTarjeta
   },
-  data() { return { } },
+  data() { return { cargando: true } },
   computed: {
-    ...mapState(['equipo'])
+    equipo() {
+      return this.$store.state.equipo.equipo
+    }
+    // ...mapState({
+    //   equipo: 'equipo/equipo'
+    // })
   },
   created() {
     this.getEquipo()
   },
+  updated() {
+    this.cargando = false
+  },
   methods: {
-    ...mapActions(['getEquipo'])
+    ...mapActions({
+      getEquipo: 'equipo/getEquipo'
+    })
   },
 }
 </script>
