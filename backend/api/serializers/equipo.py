@@ -10,7 +10,7 @@ class EquipoSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Equipo
-        fields = ['id', 'nombre', 'descripcion', 'fecha_creacion', 'color', 'creador', 'jugadores']
+        fields = ['id', 'nombre', 'descripcion', 'fecha_creacion', 'creador', 'jugadores', 'liga']
 
     def create(self, validated_data):
         jugadores_data = validated_data.pop('jugadores')

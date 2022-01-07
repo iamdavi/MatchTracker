@@ -1,5 +1,7 @@
 export default function ({ store, redirect }) {
-	// if (!store.state.equipoYaExiste) {
+	// console.log(store.state.equipo.equipoYaExiste);
+	// if (!store.state.equipo.equipoYaExiste) {
+	// 	console.log('entra');
 	// 	return redirect('/start')
 	// }
 }

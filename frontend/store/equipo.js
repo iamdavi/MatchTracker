@@ -47,6 +47,7 @@ export const actions = {
       await this.$axios.get('/equipo/').then(res => {
         commit('setEquipo', res.data)
         commit('setEquipoYaExiste', true)
+        commit('jugador/setJugadores', res.data.jugadores, { root: true })
       })
     } catch (error) {
       commit('setEquipo', {
@@ -119,7 +120,9 @@ export const actions = {
 			  this.$router.push('/')
       })
     } catch (error) {
-      console.log(error);
+      this.$toast.global.defaultError({
+        msg: 'No se ha podido crear el equipo'
+      })
     }
   }
 }

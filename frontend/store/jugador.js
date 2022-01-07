@@ -9,6 +9,8 @@ export const state = () => ({
 export const mutations = {
   // JUGADORES
   setJugadores(state, payload) {
+    console.log('entra');
+    console.log(payload);
     state.jugadores = payload
   },
   removeJugador(state, jugadorId) {
@@ -35,9 +37,6 @@ export const actions = {
     try {
       await this.$axios.get('/jugadores/').then(res =>  commit('setJugadores', res.data) )
     } catch (error) {
-      this.$toast.global.defaultError({
-        msg: 'No se ha podido obtener los jugadores'
-      })
     }
   },
   async editJugador({ commit, state }) {

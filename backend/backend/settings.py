@@ -172,3 +172,8 @@ def _get_equipo_data():
     return equipo_data
 
 EQUIPO_DATA = _get_equipo_data()
+
+ROL_JUGADOR = [
+	('J', 'Jugador'),
+	('E', 'entrenador')
+]

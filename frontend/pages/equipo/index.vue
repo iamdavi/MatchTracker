@@ -2,7 +2,7 @@
 	<v-container fill-height>
 		<v-row justify="center">
 			<v-col md="5" sm="12">
-				<v-card v-on:keyup.enter="editEquipo()" class="text-center pa-3">
+				<v-card class="text-center pa-3" @keyup.enter="editEquipo()">
 					<equipo-form /> <!-- Formulario de equipo -->
           <div class="d-flex justify-space-between mt-5">
             <v-btn text to="/">
@@ -38,9 +38,6 @@ export default {
     ...mapActions({
       editEquipo: 'equipo/editEquipo'
     }),
-    prueba() {
-      console.log('algo');
-    }
   }
 }
 </script>

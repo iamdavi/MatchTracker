@@ -2,7 +2,7 @@ from django.http.response import Http404
 from rest_framework.views import APIView
 from api.models import Equipo
 from rest_framework.decorators import api_view
-from api.serializers import EquipoSerializer
+from api.serializers import EquipoSerializer, RivalSerializer
 from rest_framework import  status, permissions, viewsets
 from rest_framework.response import Response
 from rest_framework.decorators import action
@@ -25,19 +25,46 @@ class EquipoList(APIView):
         except Equipo.DoesNotExist:
             raise Http404
 
-    def get(self, request):
+    def guardar_rival(self, nombre_rival, jugadores_rival, usuario):
+        arr_jugadores_rival = []
+        for jugador in jugadores_rival:
+            arr_jugadores_rival.append({
+                'nombre': jugador[1],
+                'numero': jugador[0]
+            })
+        obj_rival = {
+            'nombre': nombre_rival,
+            'jugadores': arr_jugadores_rival
+        }
+        serializer = RivalSerializer(data=obj_rival)
+        if serializer.is_valid():
+            serializer.save(creador=usuario)
+
+
+    def registrar_rivales(self, data, usuario) -> None:
+        nombre_equipo = data['nombre']
+        liga_equipo = data['liga']
+        for liga in settings.EQUIPO_DATA['ligas']:
+            if liga['nombre'] == liga_equipo:
+                for equipo in liga['equipos']:
+                    if equipo != nombre_equipo:
+                        self.guardar_rival(equipo, liga['equipos'][equipo], usuario)
+
+
+    def get(self, request) -> Response:
         equipo = self.get_object(request.user)
         serializer = EquipoSerializer(equipo, many=False)
         return Response(serializer.data)
 
-    def post(self, request):
+    def post(self, request) -> Response:
         serializer = EquipoSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save(creador=request.user)
+            self.registrar_rivales(serializer.data, request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def put(self, request):
+    def put(self, request) -> Response:
         equipo = self.get_object(request.user)
         serializer = EquipoSerializer(equipo, data=request.data)
         if serializer.is_valid():
@@ -45,7 +72,7 @@ class EquipoList(APIView):
             return Response(serializer.data)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def delete(self, request):
+    def delete(self, request) -> Response:
         equipo = self.get_object(request.user)
         equipo.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)

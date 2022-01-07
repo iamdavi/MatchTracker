@@ -55,7 +55,7 @@
       </v-dialog>
       <v-dialog v-model="dialogDelete" max-width="500px">
         <v-card>
-          <!-- <v-card-title>Seguro que quieres eliminar el siguiente jugador: <br><span class="mt-2 ml-5">- {{ jugador.nombre }}</span></v-card-title> -->
+          <v-card-title>Seguro que quieres eliminar el siguiente jugador: <br><span class="mt-2 ml-5">- {{ jugador }}</span></v-card-title>
           <v-card-actions class="d-flex justify-space-between">
             <v-btn color="primary" text @click="closeDelete">Cancel</v-btn>
             <v-btn color="primary" @click="removeJugador(); dialogDelete = false">Eliminar</v-btn>
@@ -129,7 +129,7 @@ export default {
     },
   },
   created() {
-    this.getJugadores()
+    // this.getJugadores()
   },
   methods: {
     ...mapActions({
