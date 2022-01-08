@@ -15,7 +15,7 @@ cryptography==35.0.0
 cssselect==1.1.0
 defusedxml==0.7.1
 dill==0.3.4
-Django==3.2.7
+Django==3.2.10
 django-cors-headers==3.8.0
 django-cors-middleware==1.5.0
 django-templated-mail==1.1.1
