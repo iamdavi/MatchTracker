@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from datetime import timedelta
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -158,3 +159,21 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Constantes para la aplicacion
+def _get_equipo_data():
+    equipo_data = json.load(open(BASE_DIR / 'api/services/lectoractas/equipos.json'))
+    for liga in equipo_data['ligas']:
+        for equipo in liga['equipos']:
+            nuevo = [(jugador[0], ' '.join([jugador[1].split(' ')[i] for i in [2, 0, 1]]).title()) 
+                    for jugador in liga['equipos'][equipo]]
+            liga['equipos'][equipo] = nuevo
+    return equipo_data
+
+EQUIPO_DATA = _get_equipo_data()
+
+ROL_JUGADOR = [
+	('J', 'Jugador'),
+	('E', 'entrenador')
+]

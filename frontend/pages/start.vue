@@ -15,7 +15,7 @@
 					<v-btn
 						color="primary"
 						block
-						@click="paso = 2"
+						@click="setJugadoresOfEquipo(); paso = 2"
 					>
 						Continue
 					</v-btn>
@@ -27,15 +27,22 @@
 					<v-btn
 						color="primary"
 						block
-						@click="newEquipo(); paso = 3"
+						@click="paso = 3"
 					>
 						Continue
 					</v-btn>
 				</v-stepper-content>
 
 				<v-stepper-content step="3">
-					<h3 class="inner-stepper-title">Datos de los jugadores</h3>
-					<equipo-form />
+					<h2 class="inner-stepper-title">Datos de los jugadores</h2>
+					<tabla-jugadores class="my-5" />
+					<v-btn
+						color="primary"
+						block
+						@click="newEquipoJugadores()"
+					>
+						Guardar equipo
+					</v-btn>
 				</v-stepper-content>
 
 			</v-stepper-items>
@@ -49,22 +56,39 @@
 <script>
 import { mapActions } from 'vuex'
 import StepOne from '@/components/StepOne'
+import TablaJugadores from '@/components/TablaJugadores'
 import EquipoForm from '@/components/equipo/EquipoForm'
 
 export default {
 	name: 'Start',
+  components: { 
+    StepOne,
+    TablaJugadores,
+    EquipoForm
+  },
 	layout: 'empty',
-	component: {
-		EquipoForm,
-		StepOne
-	},
 	data() {
 		return {
 			paso: 1
 		}
 	},
 	methods: {
-		...mapActions(['newEquipo'])
+		...mapActions({
+      newEquipoJugadores: 'equipo/newEquipoJugadores'
+    }),
+    setJugadoresOfEquipo() {
+      const jugadores = []
+      const equipo = this.$store.state.equipo.equipo
+      const liga = this.$store.state.equipo.ligas.ligas.filter(liga => liga.nombre === equipo.liga)[0]
+      const jugadoresEquipo = liga.equipos[equipo.nombre]
+      jugadoresEquipo.forEach(jugador => {
+        jugadores.push({
+          numero: jugador[0],
+          nombre: jugador[1]
+        })
+      });
+      this.$store.commit('jugador/setJugadores', jugadores)
+    }
 	},
 }
 </script>

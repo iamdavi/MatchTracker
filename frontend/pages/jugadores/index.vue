@@ -7,7 +7,8 @@
           v-model="dialog"
           max-width="500px"
         >
-          <template v-slot:activator="{ on, attrs }">
+          <!-- <template v-slot:activator="{ on, attrs }"> -->
+          <template #activator="{ on, attrs }">
             <v-btn
               color="primary"
               v-bind="attrs"
@@ -72,7 +73,9 @@
           </v-card>
         </v-dialog>
 			</div>
-			<tabla-jugadores />
+      <v-card>
+			  <tabla-jugadores />
+      </v-card>
 		</v-col>
 	</v-row>
 </template>
@@ -92,15 +95,20 @@ export default {
 		TablaJugadores
 	},
   computed: {
-    ...mapState(['equipo', 'jugador']),
+    ...mapState({
+      equipo: 'equipo/equipo', 
+      jugador: 'jugador/jugador'
+    }),
 		...mapFields({
 			fields: ["numero", "nombre"],
 			base: "jugador",
-			mutation: "updateJugador"
+			mutation: "jugador/updateJugador"
 		}),
   },
 	methods: {
-		...mapActions(['newJugador']),
+		...mapActions({
+      newJugador: 'jugador/newJugador'
+    }),
 		close() {
       this.dialog = false
 		}

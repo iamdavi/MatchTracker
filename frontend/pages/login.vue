@@ -76,10 +76,11 @@ export default {
         await this.$auth.loginWith('local', { data: this.user })
           .then(() => {
             this.setLoggedInUser()
+            this.$toasted.global.defaultSuccess({
+              msg: 'Usuario autenticado correctamente'
+            })
+            this.$router.push('/')
           })
-        this.$toasted.global.defaultSuccess({
-          msg: 'Usuario autenticado correctamente'
-        })
       } catch (err) {
         this.$toasted.global.defaultError({
           msg: 'Credenciales inválidas'

@@ -2,9 +2,7 @@
   <v-app>
     <v-navigation-drawer
       v-model="drawer"
-      :mini-variant="miniVariant"
       :clipped="clipped"
-      expand-on-hover
       style="height: 100% !important;"
       fixed
       app
@@ -55,7 +53,7 @@
       </v-container>
     </v-main>
     <v-footer app>
-      <span>By: <b>David Otero</b></span>
+      <span>By: <b>David Otero</b> &amp; <b>Txema Otero</b></span>
     </v-footer>
   </v-app>
 </template>
@@ -87,7 +85,7 @@ export default {
         {
           icon: 'mdi-sword-cross',
           title: 'Rivales',
-          to: '/#'
+          to: '/rivales'
         },
         {
           icon: 'mdi-soccer',
@@ -101,7 +99,7 @@ export default {
         },
         {
           icon: 'mdi-logout',
-          title: 'Logout',
+          title: 'Cerrar sesion',
           to: '/logout'
         }
       ],

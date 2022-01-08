@@ -1,9 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      fixed
-      app
-    >
+    <v-app-bar app>
       <v-spacer />
       <v-toolbar-title v-text="'Match Tracker'" />
       <v-spacer />
