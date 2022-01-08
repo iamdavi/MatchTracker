@@ -84,7 +84,9 @@ class Liga:
         path = os.path.join("files", self.id_name)
         if not os.path.exists(path):
             os.mkdir(os.path.join(path))
+        if not os.path.exists(os.path.join(path, "actas")):
             os.mkdir(os.path.join(path, "actas"))
+        if not os.path.exists(os.path.join(path, "logos")):
             os.mkdir(os.path.join(path, "logos"))
 
         self.jornadas = [
