@@ -88,9 +88,14 @@ export default {
           to: '/rivales'
         },
         {
+          icon: 'mdi-calendar-week',
+          title: 'Jornadas',
+          to: '/jornadas'
+        },
+        {
           icon: 'mdi-soccer',
           title: 'Partidos',
-          to: '/#'
+          to: '/partidos'
         },
         {
           icon: 'mdi-strategy',

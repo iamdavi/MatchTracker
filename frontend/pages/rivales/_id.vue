@@ -16,14 +16,14 @@ export default {
 	component: {
 		TablaJugadores
 	},
-  created() {
-    const id = this.$route.params.id
-    this.getRival(id)
-  },
   computed: {
     rival() {
       return this.$store.state.rival.rival
     }
+  },
+  created() {
+    const id = this.$route.params.id
+    this.getRival(id)
   },
 	methods: {
 		...mapActions({

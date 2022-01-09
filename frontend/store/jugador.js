@@ -24,7 +24,7 @@ export const mutations = {
   setJugador(state, payload) {
     state.jugador = payload
   },
-  updateJugador(state, payload) {
+  updateJornada(state, payload) {
     Object.entries(payload).forEach(campo => {
       state.jugador[campo[0]] = campo[1]
     });

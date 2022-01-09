@@ -42,13 +42,13 @@ export default {
 		return {
 		}
 	},
-  created() {
-    this.getRivales()
-  },
   computed: {
     rivales() {
       return this.$store.state.rival.rivales
     }
+  },
+  created() {
+    this.getRivales()
   },
 	methods: {
 		...mapActions({
