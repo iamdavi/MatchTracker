@@ -30,7 +30,7 @@ IMAPClient==2.1.0
 importlib-metadata==4.10.0
 itypes==1.2.0
 Jinja2==3.0.3
-lxml==4.7.1
+lxml==4.9.1
 MarkupSafe==2.0.1
 multiprocess==0.70.12.2
 numpy==1.22.0
