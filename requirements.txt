@@ -3,7 +3,7 @@ argcomplete==1.10.3
 asgiref==3.4.1
 beautifulsoup4==4.8.2
 bs4==0.0.1
-certifi==2021.10.8
+certifi==2022.12.7
 cffi==1.15.0
 chardet==3.0.4
 charset-normalizer==2.0.10
